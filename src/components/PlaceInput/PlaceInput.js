@@ -4,8 +4,8 @@ import {StyleSheet, Text, View, TextInput, Button} from 'react-native';
 
 class PlaceInput extends Component{
     state={
-        placeName:'',
-        placePassword:'',
+        placeName:"",
+        placePassword:"",
     }
 
     placeNameChangerHandler=val=>{
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
       justifyContent:"space-between"
     },
     placeInput:{
-      width:"300",
+      width:"80%",
       borderColor: "black", 
       borderWidth:1, 
       margin:6

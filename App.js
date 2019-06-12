@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
 
 import PlaceInput from './src/components/PlaceInput/PlaceInput';
-import ListItem from './src/components/ListItem/ListItem';
+import PlaceList from './src/components/PlaceList/PlaceList';
 
 export default class App extends Component{
 
@@ -11,21 +11,19 @@ export default class App extends Component{
   }
 
   placeAddedHandler = placeName => {
-    this.setState( prevState => {
-        return {
-          places: prevState.places.concat(placeName)
-        };
+    this.setState(prevState => {
+      return {
+        places: prevState.places.concat(placeName)
+      };
     });
   };
 
   render() { 
-    const placesOutput = this.state.places.map((place,i)=>(
-        <ListItem key={i} placeName={place}/>
-      ));
+    
     return (
       <View style={styles.container}>
-          <PlaceInput onPlaceAdded={this.placeAddedHandler}/>
-          <View style={styles.listContainer}>{placesOutput}</View>
+        <PlaceInput onPlaceAdded={this.placeAddedHandler} />
+         <PlaceList places={this.state.places}/> 
       </View>
     );
   }
@@ -42,8 +40,5 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
-  },
-  listContainer:{
-    width:"100%"
   }
 });
