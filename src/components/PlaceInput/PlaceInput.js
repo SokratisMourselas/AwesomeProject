@@ -5,7 +5,7 @@ import {StyleSheet, Text, View, TextInput, Button} from 'react-native';
 class PlaceInput extends Component{
     state={
         placeName:"",
-        placePassword:"",
+        // placePassword:"",
     }
 
     placeNameChangerHandler=val=>{
@@ -14,11 +14,11 @@ class PlaceInput extends Component{
         });
     };
 
-    placePasswordChangerHandler=val=>{
-        this.setState({
-          placePassword: val
-        });
-    };
+    // placePasswordChangerHandler=val=>{
+    //     this.setState({
+    //       placePassword: val
+    //     });
+    // };
 
     placeSubmitHandler=()=>{
         if(this.state.placeName.trim() === ""){
@@ -36,14 +36,14 @@ class PlaceInput extends Component{
                     placeholder="Username"
                     value={this.state.placeName}
                     onChangeText={this.placeNameChangerHandler}/>
-                <TextInput 
+                {/* <TextInput 
                     style={styles.placeInput}
                     placeholder="Password"
                     secureTextEntry={true}
                     value={this.state.placePassword}
-                    onChangeText={this.placePasswordChangerHandler}/>
+                    onChangeText={this.placePasswordChangerHandler}/> */}
                 <Button 
-                    title="Sign In"
+                    title="Add Place"
                     style={styles.buttonInput}
                     onPress={this.placeSubmitHandler}/>
             </View>
