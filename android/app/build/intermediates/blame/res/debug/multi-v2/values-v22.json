@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac/AwesomeProject/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+            "outputFile": "C:\\Users\\smoursel\\Documents\\UDEMY FOR BUSINESS\\React router\\Projects\\AwesomeProject\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
             "map": [
                 {
-                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/18c19da2a3a1c257187dad91f0d7846f/res/values-v22/values-v22.xml",
+                    "source": "C:\\Users\\smoursel\\.gradle\\caches\\transforms-2\\files-2.1\\138223cb00202df16164622f4521f10f\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",
